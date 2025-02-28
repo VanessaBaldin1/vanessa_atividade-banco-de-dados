@@ -34,3 +34,6 @@ Crie os relacionamentos de acordo com a cardinalidade indicada a seguir:
 
 1 curso é lecionado somente por 1 professor, portanto será usada a cardinalidade 1:1.
  
+## Exemplo de Modelagem Conceitual
+ 
+![Entidades, atributos e relacionamento](exercicio-modelagem-conceitual/conceitual_atividade-banco-de-dados.png)
