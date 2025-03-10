@@ -37,3 +37,46 @@ VALUES(
    100
 );
 ```
+## INSERT (Cadastre pelo menos 5 professores:)
+
+```sql
+INSERT INTO professores(nome, area_atuacao, cursos_id)
+VALUES(
+  'Jon Oliva',
+   'infra',
+   5
+);
+```
+```sql
+INSERT INTO professores(nome, area_atuacao, cursos_id)
+VALUES(
+  'Lemmy Kilmister',
+   'design',
+   4
+);
+```
+```sql
+INSERT INTO professores(nome, area_atuacao, cursos_id)
+VALUES(
+  'Neil Peart',
+   'design',
+   3
+);
+```
+```sql
+INSERT INTO professores(nome, area_atuacao, cursos_id)
+VALUES(
+  'Ozzy Osbourne',
+   'desenvolvimento',
+   2
+);
+```
+
+```sql
+INSERT INTO professores(nome, area_atuacao, cursos_id)
+VALUES(
+  'David Gilmour',
+   'desenvolvimento',
+   1
+);
+```
