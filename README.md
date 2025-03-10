@@ -37,3 +37,5 @@ Crie os relacionamentos de acordo com a cardinalidade indicada a seguir:
 ## Exemplo de Modelagem Conceitual
  
 ![Entidades, atributos e relacionamento](/exercicio-modelagem-conceitual/conceitual_atividade-banco-de-dados.png)
+
+
