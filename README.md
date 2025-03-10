@@ -52,4 +52,4 @@ Agora, na modelagem lógica, você deverá pesquisar qual tipo de dados permite 
 Ao final, coloque o arquivo de modelagem lógica em seu repositório do exercício em versão original e também exportado em formato de imagem.
 
 ## Exemplo de Modelagem Conceitual
-![Entidades, atributos e relacionamento](/modelagem-logica/logico_atividade-banco-de-dados.png))
+![Entidades, atributos e relacionamento](/modelagem-logica/logico_atividade-banco-de-dados.png)
