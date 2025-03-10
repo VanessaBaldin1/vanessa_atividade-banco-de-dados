@@ -75,4 +75,5 @@ ALTER TABLE alunos
   FOREIGN KEY (cursos_id) REFERENCES cursos(id);
 ```
 
+**Fazer Backp das tabelas e colunas sem registro, consta na pasta dump**
 
