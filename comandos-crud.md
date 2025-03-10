@@ -81,4 +81,15 @@ VALUES(
 );
 ```
 
+## INSERT (Atualize os dados do campo professor_id da tabela cursos, associando cada curso ao seu professor correspondente.)
 
+
+
+```sql
+INSERT INTO cursos(professores_id)
+VALUES(
+  'David Gilmour',
+   'desenvolvimento',
+   1
+);
+```
