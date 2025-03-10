@@ -42,3 +42,15 @@ CREATE TABLE alunos(
   cursos_id INT NOT NULL --Será chave estrangeira
 );
 ```
+
+### Criar relacionamento entre as tabelas e configurar a chave estrangeira
+
+```sql
+ALTER TABLE produtos
+-- Adicionando uma restrição indicando o nome do relacionamento
+  ADD CONSTRAINT fk_produtos_fabricantes
+
+-- Criando a chave-estrangeira (fabricante_id) que
+-- aponta para a chave-primária (id) de OUTRA TABELA (fabricantes)
+  FOREIGN KEY (fabricante_id) REFERENCES fabricantes(id);
+```
