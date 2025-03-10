@@ -53,3 +53,4 @@ Ao final, coloque o arquivo de modelagem lógica em seu repositório do exercíc
 
 ## Exemplo de Modelagem Conceitual
 ![Entidades, atributos e relacionamento](/modelagem-logica/logico_atividade-banco-de-dados.png)
+
