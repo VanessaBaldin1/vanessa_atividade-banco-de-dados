@@ -54,3 +54,9 @@ Ao final, coloque o arquivo de modelagem lógica em seu repositório do exercíc
 ## Exemplo de Modelagem Lógico
 ![Entidades, atributos e relacionamento](/modelagem-logica/logico_atividade-banco-de-dados.png)
 
+## Os comandos foram feitos nos arquivos abaixo:
+**Comandos-fisico**
+[Veja o modelo físico aqui](modelo-fisico.md)
+
+**Comandos-crud**
+[Veja o modelo físico aqui](comandos-crud.md)
