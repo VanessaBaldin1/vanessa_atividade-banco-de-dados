@@ -156,4 +156,14 @@ WHERE area_atuacao IN ('Design', 'desenvolvimento', 'infra')
 GROUP BY area_atuacao;
 ```
 
+## 6-Faça uma consulta que mostre o nome dos alunos, o título e a carga horária dos cursos que fazem.
+
+```sql
+SELECT 
+    alunos.nome AS nome_aluno,
+    cursos.titulo AS titulo_curso,
+    cursos.carga_horaria
+FROM alunos
+JOIN cursos ON alunos.cursos_id = cursos.id;
+```
 
