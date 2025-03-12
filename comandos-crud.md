@@ -271,3 +271,10 @@ SELECT nome,
 FROM alunos
 HAVING media < 7;
 ```
+# 4- Criar uma consulta que mostre a quantidade de alunos com média maior ou igual a 7.
+
+```sql
+SELECT COUNT(*) AS quantidade_alunos
+FROM alunos
+HAVING (ROUND((primeira_nota + segunda_nota) / 2, 2)) >= 7;
+```
