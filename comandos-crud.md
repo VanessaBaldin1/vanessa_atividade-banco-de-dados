@@ -140,4 +140,11 @@ SELECT
 FROM cursos 
 ORDER BY titulo ASC;
 ```
+## 4 - Faça uma consulta que mostre os nomes dos professores que são somente da área "desenvolvimento".
 
+```sql
+SELECT nome 
+FROM professores 
+WHERE area_atuacao;
+```
+## 5-Faça uma consulta que mostre a quantidade de professores que cada área ("design", "infra", "desenvolvimento") possui.
