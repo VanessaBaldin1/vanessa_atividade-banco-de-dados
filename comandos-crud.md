@@ -243,3 +243,14 @@ JOIN cursos ON alunos.cursos_id = cursos.id
 ORDER BY alunos.nome ASC;
 ```
 
+### 🔥 DESAFIOS 🔥
+
+# 1- Criar uma consulta que calcule a idade do aluno
+
+```sql
+SELECT nome,
+       data_de_nascimento,
+       TIMESTAMPDIFF(YEAR, data_de_nascimento, CURDATE()) AS idade
+FROM alunos;
+```
+# 2 - 
