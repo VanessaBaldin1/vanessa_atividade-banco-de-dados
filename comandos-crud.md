@@ -201,3 +201,15 @@ ORDER BY quantidade_alunos DESC;
 ```
 ## 10- Faça uma consulta que mostre o nome dos alunos, suas notas, médias, e o título dos cursos que fazem. Devem ser considerados somente os alunos de Front-End e Back-End. Mostre os resultados classificados pelo nome do aluno.
 
+```sql 
+SELECT 
+    alunos.nome AS nomes,
+    alunos.primeira_nota,
+    alunos.segunda_nota,
+    ROUND((alunos.primeira_nota + alunos.segunda_nota) / 2, 2) AS media,
+    cursos.titulo AS titulo_curso
+FROM alunos
+JOIN cursos ON alunos.cursos_id = cursos.id
+WHERE cursos.titulo IN ('Front-End', 'Back-End')
+ORDER BY alunos.nome;
+```
