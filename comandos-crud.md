@@ -108,3 +108,23 @@ INSERT INTO alunos (nome, data_de_nascimento, primeira_nota, segunda_nota, curso
 ('Igor Alves', '2002-04-15', 9.0, 8.2, 4),    -- Figma
 ('Júlia Santana', '2000-12-25', 6.5, 7.0, 5);  -- Redes de Computadores
 ```
+
+## Atividades de Banco de Dados - Etapa 4 (FINAL)
+
+**CRUD - Consultas**
+💡Não se esqueça de continuar guardando todos os comandos SQL bem-sucedidos que utilizou em um arquivo Markdown (exemplo: comandos-crud.md). Este arquivo deve ser colocado no seu repositório.
+
+## 1- Faça uma consulta que mostre os alunos que nasceram antes do ano 2009
+
+```sql
+SELECT nome, data_de_nascimento FROM alunos
+WHERE data_de_nascimento < 2009;
+```
+## 2- Faça uma consulta que calcule a média das notas de cada aluno e as mostre com duas casas decimais.
+
+```sql
+SELECT alunos.cursos_id, SUM(primeira_nota + segunda_nota) AS Total FROM alunos
+JOIN cursos ON alunos.cursos_id = cursos.professores.id
+GROUP BY cursos_id;
+
+```
