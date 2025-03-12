@@ -276,5 +276,5 @@ HAVING media < 7;
 ```sql
 SELECT COUNT(*) AS quantidade_alunos
 FROM alunos
-HAVING (ROUND((primeira_nota + segunda_nota) / 2, 2)) >= 7;
+WHERE ROUND((primeira_nota + segunda_nota) / 2, 2) >= 7;
 ```
