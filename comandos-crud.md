@@ -242,3 +242,4 @@ FROM alunos
 JOIN cursos ON alunos.cursos_id = cursos.id
 ORDER BY alunos.nome ASC;
 ```
+
