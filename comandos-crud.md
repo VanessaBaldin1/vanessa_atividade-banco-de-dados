@@ -188,3 +188,16 @@ FROM alunos
 JOIN cursos ON alunos.cursos_id = cursos.id
 JOIN professores ON cursos.id = professores.cursos_id;
 ```
+## 9- Faça uma consulta que mostre a quantidade de alunos que cada curso possui. Classifique os resultados em ordem descrecente de acordo com a quantidade de alunos.
+
+```sql 
+   SELECT 
+    cursos.titulo AS titulo_curso,
+    COUNT(alunos.id) AS quantidade_alunos
+FROM cursos
+LEFT JOIN alunos ON cursos.id = alunos.cursos_id
+GROUP BY cursos.titulo
+ORDER BY quantidade_alunos DESC;
+```
+## 10- Faça uma consulta que mostre o nome dos alunos, suas notas, médias, e o título dos cursos que fazem. Devem ser considerados somente os alunos de Front-End e Back-End. Mostre os resultados classificados pelo nome do aluno.
+
