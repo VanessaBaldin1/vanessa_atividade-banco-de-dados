@@ -220,3 +220,15 @@ UPDATE cursos
 SET titulo = 'Adobe XD', carga_horaria = 15
 WHERE titulo = 'Figma';
 ```
+
+## 12 - Faça uma consulta que exclua um aluno do curso de Redes de Computadores e um aluno do curso de UX/UI.
+
+```sql
+DELETE FROM alunos
+WHERE cursos_id = (SELECT id FROM cursos WHERE titulo = 'Redes de Computadores')
+LIMIT 1; 
+
+DELETE FROM alunos
+WHERE cursos_id = (SELECT id FROM cursos WHERE titulo = 'UX/UI Design')
+LIMIT 1;
+```
