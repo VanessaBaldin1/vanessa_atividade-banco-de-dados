@@ -232,3 +232,13 @@ DELETE FROM alunos
 WHERE cursos_id = (SELECT id FROM cursos WHERE titulo = 'UX/UI Design')
 LIMIT 1;
 ```
+## 13 - Faça uma consulta que mostre a lista de alunos atualizada e o título dos cursos que fazem, classificados pelo nome do aluno.
+
+```sql
+SELECT 
+    alunos.nome AS nome_aluno,
+    cursos.titulo AS titulo_curso
+FROM alunos
+JOIN cursos ON alunos.cursos_id = cursos.id
+ORDER BY alunos.nome ASC;
+```
