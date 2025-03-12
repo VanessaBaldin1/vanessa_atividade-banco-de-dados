@@ -253,4 +253,11 @@ SELECT nome,
        TIMESTAMPDIFF(YEAR, data_de_nascimento, CURDATE()) AS idade
 FROM alunos;
 ```
-# 2 - 
+
+# 2 - Criar uma consulta que calcule a média das notas de cada aluno e mostre somente os alunos que tiveram a média maior ou igual a 7.
+```sql
+SELECT nome,
+       ROUND((primeira_nota + segunda_nota) / 2, 2) AS media
+FROM alunos
+HAVING media >= 7;
+```
