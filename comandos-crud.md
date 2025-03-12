@@ -167,3 +167,24 @@ FROM alunos
 JOIN cursos ON alunos.cursos_id = cursos.id;
 ```
 
+## 7- Faça uma consulta que mostre o nome dos professores e o título do curso que lecionam. Classifique pelo nome do professor.
+
+```sql
+SELECT 
+    professores.nome AS nome_professor,
+    cursos.titulo AS titulo_curso
+FROM professores
+JOIN cursos ON professores.cursos_id = cursos.id
+ORDER BY professores.nome;
+```
+## 8- Faça uma consulta que mostre o nome dos alunos, o título dos cursos que fazem, e o professor de cada curso.
+
+```sql
+SELECT 
+    alunos.nome AS nome_aluno,
+    cursos.titulo AS titulo_curso,
+    professores.nome AS nome_professor
+FROM alunos
+JOIN cursos ON alunos.cursos_id = cursos.id
+JOIN professores ON cursos.id = professores.cursos_id;
+```
