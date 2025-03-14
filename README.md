@@ -79,14 +79,18 @@ Lemmy Kilmister, área design
 Neil Peart, área design
 Ozzy Osbourne, área desenvolvimento
 David Gilmour, área desenvolvimento
+
 🚨 Atenção: durante o cadastro dos professores, associe cada professor a um curso na ordem contrária dos registros.
 
 Exemplos:
 
 O primeiro professor (Jon Oliva, infra) será atribuido ao último curso (Redes de Computadores)
+
 O segundo professor (Lemmy, design) será atribuido ao penúltimo curso (Figma)
 Atualize os dados do campo professor_id da tabela cursos, associando cada curso ao seu professor correspondente.
+
 Cadastre pelo menos 10 alunos distribuidos aleatoriamente dentre os cursos, com datas de nascimento variadas, notas baixas e altas (sempre entre 0.00 e 10.00).
+
 💡Não se esqueça de guardar todos os comandos SQL que utilizou nesta manipulação de dados em um arquivo Markdown (exemplo: comandos-crud.md). Este arquivo deve ser colocado no seu repositório.
 
 
